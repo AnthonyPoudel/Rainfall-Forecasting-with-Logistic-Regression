@@ -89,12 +89,8 @@ Total: 123 features
 
 🤖 Model Training
 Model used:
-
-python
 LogisticRegression(solver="liblinear")
 Training is performed on:
-
-Code
 X_train = train_inputs[numeric_cols + encoded_cols]
 y_train = train_target
 The model learns a weight for each feature and a bias term.
@@ -109,7 +105,6 @@ A normalized confusion matrix is included in the notebook to visualize predictio
 💾 Saving Processed Data
 All processed datasets are saved as Parquet files for fast loading and preserved data types:
 
-Code
 train_inputs.parquet
 val_inputs.parquet
 test_inputs.parquet
@@ -119,7 +114,6 @@ test_target.parquet
 🔮 Predicting New Inputs
 The notebook includes a helper function:
 
-python
 predictSingleInputs(singleInputs)
 It:
 
